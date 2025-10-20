@@ -48,15 +48,15 @@ export default function Home({ onAddToCart }: HomeProps) {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-hero text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMCAxMmMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjA1Ii8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
-        <div className="container mx-auto px-4 py-20 sm:py-32 relative">
-          <div className="max-w-3xl animate-fade-in">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-center">
+          <div className="animate-fade-in me-0 lg: me-20 mt-32 lg:my-20">
             <h1 className="text-4xl sm:text-6xl font-bold mb-6">
               Discover Your Style
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8">
               Explore our curated collection of premium products with unbeatable prices
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="absolute flex flex-wrap gap-4">
               <Button 
                 size="lg" 
                 variant="secondary"
@@ -66,14 +66,14 @@ export default function Home({ onAddToCart }: HomeProps) {
                 Shop Now
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-white/10 hover:bg-white/20 text-white border-white/30"
-              >
-                View Deals
-              </Button>
             </div>
+          </div>
+          <div className='flex justify-end animate-float-in'>
+            <img
+              src="hero.png"
+              alt="Hero Image"
+              className="max-w-sm opacity-90 animate-float-in"
+            />
           </div>
         </div>
       </section>

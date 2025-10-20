@@ -66,8 +66,8 @@ export default component$(() => {
     <div class="min-h-screen">
       <section class="relative overflow-hidden bg-gradient-hero text-white">
         <div class="absolute inset-0 opacity-20"></div>
-        <div class="container mx-auto px-4 py-20 sm:py-32 relative">
-          <div class="max-w-3xl animate-fade-in">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-center">
+          <div class="animate-fade-in me-0 lg: me-20 mt-32 lg:my-20">
             <h1 class="text-4xl sm:text-6xl font-bold mb-6">Discover Your Style</h1>
             <p class="text-lg sm:text-xl text-white/90 mb-8">
               Explore our curated collection of premium products with unbeatable prices
@@ -77,15 +77,14 @@ export default component$(() => {
                 Shop Now
                 <ArrowRightIcon class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                class="bg-white/10 hover:bg-white/20 text-white border-white/30"
-                onClick$={() => navigate('/products')}
-              >
-                View Deals
-              </Button>
             </div>
+          </div>
+          <div class='flex justify-end animate-float-in'>
+            <img
+              src="../hero.png"
+              alt="Hero Image"
+              class="max-w-sm opacity-90 animate-float-in"
+            />
           </div>
         </div>
       </section>
