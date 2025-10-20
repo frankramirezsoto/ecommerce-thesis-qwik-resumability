@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: theme('colors.foreground');
+  background-color: theme('colors.background');
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: theme('colors.background');
+  color: theme('colors.foreground');
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.bg-gradient-hero {
+  background-image: linear-gradient(
+    135deg,
+    rgba(30, 64, 175, 1) 0%,
+    rgba(79, 70, 229, 1) 50%,
+    rgba(129, 140, 248, 1) 100%
+  );
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "@builder.io/qwik/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@/components/*": ["src/components/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/contexts/*": ["src/contexts/*"],
+      "@/types": ["src/types"],
+      "@/types/*": ["src/types/*"],
+      "@/routes/*": ["src/routes/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
